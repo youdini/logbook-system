@@ -1,0 +1,113 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-self:flex-start;
+
+    button {
+      background: transparent;
+      outline: 0;
+      border: 0;
+      cursor: pointer;
+    }
+
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      transition: 300ms ease-in-out 100ms;
+      
+      &:hover {
+        width: 170px;
+        height: 170px;
+      }
+    }
+
+
+    .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #3C91E6;
+      width: 100vw;
+      border-radius: 0 0 0 40px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+    }
+
+    h2 {
+      color: white;
+      position: absolute;
+      left: 200px;
+    }
+  }
+
+  .form-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5%;
+      min-width: 500px;
+      min-height: 400px;
+      background-color: #ebebeb;
+      border-radius: 20px;
+      gap: 30px;
+
+      input[type="text"] {
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 1em;
+        border: 0;
+        outline: 0;
+        width: 25vw;
+        min-width: 200px;
+        transition: 200ms ease-in-out 100ms;
+
+        &:focus {
+          transform: scale(1.03);
+          box-shadow: 4px 3px 8px 1px #969696;
+        }
+      }
+      input[type="text"]:focus {
+        border: 1px solid #3c91e6;
+      }
+      
+      button {
+        padding: 30px;
+        padding: 20px 50px 20px 50px;
+        border: none;
+        background-color: #3c91e6;
+        color: white;
+        border-radius: 10px;
+        font-size: large;
+        cursor: pointer;
+        transition: 200ms ease-in-out 300ms;
+
+        &:hover{
+          transform: scale(1.1);
+          box-shadow: 4px 3px 8px 1px #969696;
+        }
+      }
+    }
+  }
+
+}
